@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		img{
+			border:0;
+		}
+		ol,ul{
+			list-style: none;
+		}
+		em,var,strong{
+			font-style: normal;
+		}
+		.wrap{
+			width: 960px;
+			margin: 0 auto;
+
+		}
+		.main{
+			overflow: hidden;
+			zoom:1;
+		}
+		.main_left{
+			float: left;
+			width: 710px;
+			/*height: 800px;*/
+			/*background-color: #ccc;*/
+
+		}
+		.main_right{
+			float: right;
+			width: 250px;
+			/*display:inline;*/
+			/*height: 1800px;*/
+			/*background-color: green;*/
+		}
+		.head_nav{
+			background-color: #fdfdfd;
+			height: 30px;
+			padding-top: 5px;
+			overflow: hidden;
+			zoom:1;
+		}
+	    .head_nav_l{
+	    	float: left;
+	    	width: 350px;
+	    	height: 30px;
+	    	padding-left: 20px;
+	    }
+	    .head_nav_l span,a{
+            font-size: 12px;
+            color: #666666;
+	    }
+	    .head_nav_l a{
+	    	display: inline-block;
+	    	width: 41px;
+	    	height: 20px;
+	    	border: 1px solid #e5e5e5;
+	    	border-radius: 3px;
+	    	text-align: center;
+	    	line-height: 20px;
+	    	margin: 0 5px 0 0;
+	    }
+	    .head_nav_l a:hover{
+	    	color: red;
+	    }
+	    .head_nav_r{
+	    	float: right;
+	    	padding-right: 23px;
+	    }
+	    .head_nav_r a{
+	    	font-size: 12px;
+	    	color: #666666;
+	    	padding: 0px 8px;
+	    }
+	     .head_label{
+	     	height: 100px;	
+	     	/*background-color: #ccc;*/
+	     	overflow: hidden;
+	     	zoom:1;
+	     }
+	     .head_label_l span{
+	     	float: left;
+	     	width: 50px;
+	     	height: 65px;
+	     	/*background-color: black;*/
+	     	/*border: 1px solid black;*/
+	     	margin-top: 10px;
+	     	margin-left: 20px;
+            text-align: center;
+            line-height: 115px;
+            font-size: 12px;
+            color: black;
+	     }
+	     .label_1{
+	     	background: url("img/label1.jpg")0 0 no-repeat;
+	     }
+	     .head_label_l a:hover .label_1{
+	     	background: url("img/label1_1.jpg")0 0 no-repeat;
+	     }
+	     .label_2{
+	     	background: url("img/label2.jpg")0 0 no-repeat;
+	     }
+	      .head_label_l a:hover .label_2{
+	     	background: url("img/label2_2.jpg")0 0 no-repeat;
+	     }
+	     .label_3{
+	     	background: url("img/label3.jpg")0 0 no-repeat;
+	     }
+	     .head_label_l a:hover .label_3{
+	     	background: url("img/label3_3.jpg")0 0 no-repeat;
+	     }
+	     .label_4{
+	     	background: url("img/label4.jpg")0 0 no-repeat;
+	     }
+	     .head_label_l a:hover .label_4{
+	     	background: url("img/label4_4.jpg")0 0 no-repeat;
+	     }
+	     .label_5{
+	     	background: url("img/label5.jpg")0 0 no-repeat;
+	     }
+	     .head_label_l a:hover .label_5{
+	     	background: url("img/label5_5.jpg")0 0 no-repeat;
+	     }
+	     .head_label_c{
+          float: left;
+          margin-top: 10px;
+          padding-left: 26px;
+          padding-right: 20px;
+	      }
+
+	      .head_label_r span{
+	      	float: left;
+	     	width: 60px;
+	     	height: 65px;
+	     	/*background-color: black;*/
+	     	/*border: 1px solid black;*/
+            margin-top: 10px;
+	     	margin-left: 5px;
+	     	text-align: center;
+	     	line-height: 115px;
+	     	font-size: 12px;
+            color: black;
+	      }
+	     .label_7{
+	     	background: url("img/label7.jpg")6px 0px no-repeat;
+	     }
+	     .head_label_r a:hover .label_7{
+	     	background: url("img/1234.jpg")6px 0px no-repeat;
+	     }
+	     .label_8{
+	     	background: url("img/label8.jpg")6px 0px no-repeat;
+	     }
+	     .head_label_r a:hover .label_8{
+	     	background: url("img/label8_8.jpg")6px 0 no-repeat;
+	     }
+	      .label_9{
+	     	background: url("img/label9.jpg")6px 0px no-repeat;
+	     }
+	     .head_label_r a:hover .label_9{
+	     	background: url("img/label9_9.jpg")6px 0 no-repeat;
+	     }
+	      .label_10{
+	     	background: url("img/label10.jpg")6px 0px no-repeat;
+	     }
+	     .head_label_r a:hover .label_10{
+	     	background: url("img/label10_10.jpg")6px 0 no-repeat;
+	     }
+	      .label_11{
+	     	background: url("img/label11.jpg")6px 0px no-repeat;
+	     }
+	     .head_label_r a:hover .label_11{
+	     	background: url("img/label11_11.jpg")6px 0 no-repeat;
+	     }
+	    .head_search{
+	    	height: 125px;
+	    	background: url("img/search.jpg") 0 0 no-repeat;
+	    	overflow: hidden;
+	    	zoom:1;
+	    }
+	    .head_search_up {
+            padding-left: 226px;
+            line-height: 27px;
+	    }
+	     .head_search_up a{
+	     	display: inline-block;
+	        width: 80px;
+	        height: 27px;
+	        font-size: 12px;
+	        color: black;
+	        border-width: 1px 1px 0 1px ;
+	        border-style: solid solid none solid;
+	        border-color: #f8d0bf;
+	        text-align: center;
+	        margin-left: 1px;
+	        border-radius: 6px;
+	        background-color: white;
+	     }
+	     .head_search_up a:hover{
+	     	background-color: #e21c01;
+	     	color: white;
+
+	     }
+	      .head_search_c{
+            float: left;
+	      	padding-top: 17px;
+	      	padding-left: 220px;
+	      	overflow: hidden;
+	      	zoom:1;	
+	      }
+	     .head_search_c input{
+	     	width: 405px;
+	     	height: 22px;
+	     	border-radius: 5px;
+	     	font-size: 12px;
+	     }
+	     .head_seach_c_r{
+	     	float: right;
+	     	padding-top: 8px;
+	     	padding-right: 35px;
+	     }
+	     .head_seach_c_r span{
+	     	font-size: 12px;
+	     	color: white;
+	     }
+	     .head_search_down{
+	     	margin-top: 69px;
+	     	padding-left: 300px;
+	     	_margin-top:73px;
+	     }
+	     .head_search_down .search_a{
+	     	font-size: 12px;
+	     	color: red;
+	     }
+	      .head_search_down span{
+            font-size: 12px;
+            color: #ccc;
+	      }
+	      .head_search_down a{
+	      	display: inline-block;
+	      	width: 320px;
+	      	height: 16px;
+	      	font-size: 12px;
+	      	color: black;
+	      	overflow: hidden;
+	      	text-overflow:ellipsis;
+	      	margin-right: -243px;
+
+	      }
+	      .video{
+	      	float: left;
+	      	width: 345px;
+	      	height: 420px;
+	      	border:1px solid  #e5e5e5;
+	      	border-radius: 6px ;
+	      	margin: 10px 10px 10px 0;
+	      	overflow: hidden;
+			zoom:1;
+	      }
+	      .video_head{
+	      	height: 25px;
+	      	width: 345px;
+	      	font-family: 微软雅黑;
+	      	font-size: 14px;
+	      	font-weight: bold;
+	      	color: red;
+	      	padding-top: 13px;
+	      	padding-left:16px;
+	      	background: url("img/video1.jpg") 107px 10px no-repeat;
+	      }
+	      .video_main{
+	      	text-align: center;
+	      }
+	      .video_bottom{
+           overflow: hidden;
+           zoom:1;
+	      }
+	      .video_bottom img{
+             float: left;
+	      }
+	      .video_bottom dl{
+	      	padding: 15px 0 15px 20px;
+
+	      }
+	       .video_bottom dd{
+	       	font-size:12px;
+	       	color: #4d4d4d;
+	       	line-height: 20px;
+	       	padding-left: 85px;
+	       	background: url("img/right_seven.gif")73px 9px no-repeat;
+	       }
+	      .store{
+	      	float: left;
+	      	width: 345px;
+	      	height: 385px;
+	      	border:1px solid #e5e5e5;
+	      	border-top: none;
+	      	border-radius: 6px;
+	        margin-top: 10px;
+	      }
+	      .store_head{
+	      	width: 345px;
+	      	height: 36px;
+	      	/*background-color: #ccc;*/
+	      	text-align: center;
+	      	line-height: 36px;
+	      	font-family: 微软雅黑;
+	      	font-weight: bold;
+	      	color: #666666;
+	      }
+	       .store_head var{
+	       	color: black;
+	       }
+	      .store_head_l a{
+	      	float: left;
+             width: 169px;
+             height: 36px;
+             border: 1px solid #e5e5e5;
+             border-radius: 6px 6px 0 0;
+             border-left: none;
+	      	 background:url("img/store1.jpg")150px 19px no-repeat; 
+	      }
+	      .store_head_r a{
+	      	float: right;
+	      	width: 169px;
+	      	height: 36px;
+	      	/*background-color: #ccc;*/
+	      	border: 1px solid #e5e5e5;
+            border-radius: 6px 6px 0 0;
+            border-right: none;
+	      	 background:url("img/store1.jpg")150px 19px no-repeat;
+	      }
+	       .store_head em{
+	       	float: left;
+	       	width: 5px;
+	       	height: 37px;
+	         border-bottom: 1px solid  #e5e5e5;
+	       }
+	       .store_head a:hover{
+	       	color: #cc0d13;
+	        background:url("img/store2.jpg")150px 19px no-repeat;
+	        border-bottom:none;
+	       }
+	      .store_box1{
+	      	width: 320px;
+	      	height: 108px;
+	      	background-color:#f9f9f9;
+	      	margin-top: 10px;
+	      	margin-left: 15px;
+	      	opacity: 1;
+	      }
+	      .store_box1 dt{
+	      	float: left;
+	      	padding:10px 20px 0 0;
+	      }
+	      .store_{
+	      	float: right;
+	      }
+	      .s_b_theme{
+	      	padding-bottom: 10px;
+	      	padding-top: 15px;
+	      	font-size: 12px;
+	      	color: #bb0d0d;
+	      }
+	      .store_box1 dd{
+	      	font-size: 12px;
+	      	color: #6e6e6e;
+	      }
+	       .store_box2{
+	      	width: 320px;
+	      	height: 108px;
+	      	background-color: #f9f9f9;
+	      	margin-top: 10px;
+	      	margin-left: 15px;
+	      }
+	       .store_box2 dt{
+	      	float: left;
+	      	padding:10px 20px 0 0;
+	      }
+	      .store_box2 dd{
+           font-size: 12px;
+           	color: #6e6e6e;
+	      }
+	     .store_box3{
+	      	width: 320px;
+	      	height: 108px;
+	      	background-color: #f9f9f9;
+	      	margin-top: 10px;
+	      	margin-left: 15px;
+	      }
+	       .store_box3 dt{
+	      	float: left;
+	      	padding:10px 20px 0 0;
+	      }
+	      .store_box3 dd{
+           font-size: 12px;
+           	color: #6e6e6e;
+	      }
+	       .store_box{
+	       	position: relative;
+	       }
+	       .store_img{
+            position: absolute;
+            top: 37px;
+            left: 123px;
+	        }
+	      .store_bottom a{
+	       float: right;
+           font-style: 12px;
+           font-weight: bold;
+           color: black;
+           background:url("img/store6.jpg") 34px 9px no-repeat;
+           padding-right: 32px;
+           padding-top: 8px;
+	      }
+	     /* .ad1{
+	      	float: left;
+	      }*/
+	      .calendar{
+	      	float: left;
+	      	width: 345px;
+	      	height: 500px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin: 10px 10px 10px 0;
+	      	overflow: hidden;
+	      	zoom:1;
+	      }
+	      .calendar_head{
+	      	height: 76px;
+	      	/*background-color: black;*/
+	      	background: url("img/calendar_head.jpg")0px 0px no-repeat;
+	      }
+	      .calendar_head span{
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #ea2b31;
+            font-weight: bold;
+	      }
+	      .calendar_head var{
+	      	 font-family: 微软雅黑;
+	      	 font-size: 24px;
+	      	 color: black;
+	      }
+	      .calendar_head_r{
+	      	padding-left: 30px;
+            float: left;
+            padding-top: 10px;
+	      }
+	      .calendar_head_l{
+	      	 font-family: 微软雅黑;
+	      	 font-size: 26px;
+	      	 color: #ec1c16;
+	      	 float: left;
+	      	 font-weight: bold;
+	      	 padding-left: 15px;
+	      	 margin-top: 15px;
+	      }
+	      .calendar_theme{
+	      	width: 310px;
+	      	height: 85px;
+	      	/*background-color: #ccc;*/
+	      	margin:0 auto;
+	      	margin-top: 15px;
+	      }
+	      .calendar_theme a{
+	      	display: inline-block;
+	      	width: 25px;
+	      	height: 25px;
+	      	border: 1px solid #d5d5d5;
+	      	border-radius: 5px;
+            text-align: center;
+            line-height: 25px;
+            font-family: 微软雅黑;
+            font-size: 12px;
+            font-weight: bold;
+            color: red;
+            margin-bottom: 5px;
+	      }
+	      .calendar_theme img{
+	      	float: left;
+	      }
+	      .calendar_theme dd{
+	      	font-size: 12px;
+	      	padding-left: 95px;
+	      	color: #999999;
+	      	line-height: 16px;
+	      }
+	      .calendar_theme span{
+	      	display: inline-block;
+	      	font-weight: bold;
+	      	color: black;
+	      	padding-left: 5px;
+	      	padding-bottom: 1s0px;
+	      }
+	      .calendar_number{
+	      	font-family: 微软雅黑;
+	      	font-size: 12px;
+	      	width: 300px;
+	      	height: 290px;
+	      	/*background-color:#f7f7f7;*/
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+	      }
+
+	    
+	      .calendar_number td{
+	      	 width: 40px;
+	      	 height: 40px;
+	      	 color: #8a8a8a;
+	      	 font-size: 12px;
+	      	 font-weight: bold;
+	      	 border: 1px solid #ccc;
+	      	 background-color: #ededed;
+
+	      }
+	     .calendar_number a{
+	     	display: inline-block;
+	     	font-size: 12px;
+	     	font-weight: bold;
+	     	color: black;
+	     	width: 300px;
+	     	height: 25px;
+	     	line-height: 25px;
+            word-spacing: 10px;	
+           background: url("img/calendar_th.jpg")0px 0px no-repeat;
+	     }
+	        .calendar_number .number_tinge{
+	       	background-color: #f8f8f8;
+	       }
+	       .calendar_number .number_21{
+	       	background: url("img/calendar3.jpg")0 0 no-repeat;
+	       	border: 2px solid red;
+	       }
+	       .calendar_number .number_24{
+	        	background: url("img/calendar4.jpg") 0px 0px no-repeat;
+	        	position:relative;
+	        }
+	        .calendar_number .number_24_dl{
+	        	width: 330px;
+	        	height: 110px;
+	        	background-color: #ccc;
+	        }
+	        .number_24_dl{
+                position:absolute;
+	        	z-index: 1;
+	            top:1127px;
+	            left:430px;
+	            display: none;
+	        	display: inline-block;
+	        	width: 328px;
+	        	height: 108px;
+	        	background: url("img/24_.jpg")0px 0px no-repeat;
+	        }
+	        .number_24_dl dt{
+             float: left;
+             margin: 13px 0  0 25px;
+
+	        }
+	        .number_24_dl dd{
+	          float: left;
+	        }
+	      .recommend{
+	        float: left;
+	      	width: 345px;
+	      	height: 500px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin: 10px 0 10px 0;
+	      	overflow:hidden;
+	      	zoom:1;
+            }
+            .recommend_head{
+            	height: 70px;
+            	/*background-color: #ccc;*/
+            	background: url("img/recommend_head.gif")0 0 no-repeat;
+            	font-family: 微软雅黑;
+            }
+            .recommend_head_l{
+            	float: left;
+            	font-size: 24px;
+            	padding-top: 8px;
+            	padding-left: 25px;
+            }
+             .recommend_head_l span{
+             	font-size: 12px;
+             	font-weight: bold;
+             	color: #d80000;
+             }
+            .recommend_head_r a{
+            	float:left;
+            	font-size: 22px;
+            	color: #ededed;
+            	padding-left: 75px;
+            	padding-top: 25px;
+            }
+            .recommend_picture{
+            	width: 325px;
+            	height: 180px;
+            	background-color: #f8f8f8;
+            	margin: 0 auto;
+            	margin-top: 10px;
+            }
+            .r_picture{
+            	float: left;
+            	width: 295px;
+            	height: 135px;
+            	background-color: #f8f8f8;
+            	margin-top: 15px;
+            	margin-left:15px;
+            	display: inline;
+            	background: url("img/recommend1.jpg") 0 0 no-repeat;
+            }
+            .r_picture_l{
+            	float: left;
+            	width: 225px;
+            	height: 135px;
+            	/*background-color: #ccc;*/
+            	border: 1px solid white;
+            }
+            .r_picture_r{
+            	float: right;
+            	width: 60px;
+            	height: 135px;
+            	/*background-color: black;*/
+            }
+             .r_picture_r a{
+             	display: inline-block;
+             	width: 60px;
+             	height: 35px;
+             	border: 3px solid white;
+             	margin:5px 0 0 0;
+             }
+              .r_picture_r img {
+                 width: 60px;
+                 height: 35px;
+              }
+               .r_picture_r a:hover{
+                border-color:red;
+               background:url("img/recommend2a.jgp ")0 0 no-repeat;
+               }
+             .r_picture_text{
+             	font-size: 12px;
+             	color: black;
+                font-weight: bold;
+                padding-right: 56px;
+                display: block;
+                height: 25px;
+                line-height: 25px;
+             }
+             .recommend_list{
+             	width: 325px;
+             	height: 250px;
+             	/*background-color: #ccc;*/
+             	margin:0 auto;
+             	margin-top: 20px;
+             	line-height: 22px;
+             }
+             .recommend_list1{
+             	background: url("img/recommend_list1.jpg")1px 1px no-repeat;
+             }
+             .recommend_list2{
+             	background: url("img/recommend_list2.jpg")4px 1px no-repeat;
+             }
+              .recommend_list span{
+              	font-size: 12px;
+              	color: #dfdfdf;
+              	padding-left: 20px;
+              }
+             .recommend_list em{
+             	font-size: 12px;
+             	color:black;
+             }
+             .recommend_list var{
+                color: #999999;
+                float: right;
+              }
+	      .subway{
+	      	float: left;
+	      	width: 345px;
+	      	height: 320px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin: 0 10px 10px 0;
+	      	border-top: none;
+	        overflow:hidden;
+	      	zoom:1;
+	      }
+	      .subway_head{
+	      	width: 345px;
+	      	height: 35px;
+	      	/*background-color: #ccc;*/
+	      	text-align: center;
+	      	line-height: 35px;	
+	      	font-size: 12px;
+	      	font-weight: bold;
+	      }
+	       .subway_head_l{
+	       	width: 169px;
+	       	height: 35px;
+	       	float: left;
+	       	/*background-color: green;*/
+	       	border:1px solid #e5e5e5;
+	       	border-left: none;
+	       	border-radius:6px 6px 0 0;
+            background: url("img/store1.jpg")149px 15px no-repeat;
+	       }
+	       .subway_head var{
+	       	float: left;
+	       	/*background-color: black;*/
+	       	width: 5px;
+	       	height: 36px;
+	       	border-bottom: 1px solid #e5e5e5;
+	       }
+	       .subway_head_r{
+	       	float:right;
+	       	width: 169px;
+	       	height: 35px;
+	       	float:right;
+	       	/*background-color: yellow;*/ 
+	       	border:1px solid #e5e5e5;
+	       	border-right:none;
+	       	border-radius:6px 6px 0 0;
+	       	background: url("img/store1.jpg")131px 15px no-repeat;
+	       }
+	      .subway_head a{
+	      	font-size: 12px;
+	      	color: #666666;
+	      }
+	        .subway_head em{
+	        color: black;
+	        }
+	        .subway_head a:hover {
+	         color: #cc0d13;
+	         border-bottom: none;
+	         background:url("img/store2.jpg")149px 15px no-repeat;
+	        }
+	        .subway_map{
+	        	width: 345px;
+	        	/*height: 245px;*/
+	            /*background-color: #ccc;*/
+	            text-align: center;
+	            margin-top: 25px;
+	        } 
+	        .subway_bottom{
+	        	width: 325px;
+	        	height: 45px;
+	        	/*background-color: #ccc;*/
+	        	margin:0 auto;
+	        	text-align: center;
+	        	line-height: 27px;
+	        	font-family: 微软雅黑;
+	        	font-size: 12px;
+	        	color: black;
+	        	margin-top: 15px;
+	        }
+	         .subway_bottom span{
+	         	font-weight: bold;
+	         }
+             .subway_bottom_one{
+             	display: inline-block;
+             	width: 58px;
+                height: 27px;
+             	border: 1px solid #de0602;
+                border-radius:5px;
+             }   
+             .subway_bottom_one span{
+             	color:#de0602;
+             }    
+              .subway_bottom_one:hover,.subway_bottom_four:hover{
+              	color: white;
+              	background: #de0602;
+              }
+              .subway_bottom_one:hover span,.subway_bottom_four:hover span{
+                  color: white;
+              }
+               .subway_bottom_two{
+             	display: inline-block;
+             	width: 58px;
+                height: 27px;
+             	border: 1px solid #003399;
+                border-radius:5px;
+             }
+              .subway_bottom_two span{
+                 color: #003399;
+              }
+               .subway_bottom_two:hover{
+               	color: white;
+               	background-color: #003399;	
+               }
+              .subway_bottom_two:hover span{
+              	color: white;
+              }
+              .subway_bottom_three{
+             	display: inline-block;
+             	width: 58px;
+                height: 27px;
+             	border: 1px solid #ff9900;
+                border-radius:5px;
+                background-color: #ff9900;
+                color: white;
+             }
+               .subway_bottom_four{
+             	display: inline-block;
+             	width: 58px;
+                height: 27px;
+             	border: 1px solid #de0602;
+                border-radius:5px;
+             }
+             .subway_bottom_four span{
+             	color: #de0602;
+             }
+             .subway_bottom_five{
+             	display: inline-block;
+             	width: 58px;
+                height: 27px;
+             	border: 1px solid #903077;
+                border-radius:5px;
+             }
+              .subway_bottom_five span{
+              	color: #903077;
+              }
+              .subway_bottom_five:hover{
+              	color: white;
+              	background-color: #903077;
+              }
+               .subway_bottom_five:hover span{
+               	color: white;
+               }
+	      .forum{
+	      	float: left;
+	      	width: 345px;
+	      	height: 320px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	overflow: hidden;
+	      	zoom:1;
+	      }
+	      .fourm_list{
+           width: 320px;
+           height: 270px;
+           /*background-color: #CCc;*/
+           margin:0 auto; 
+	      }
+	      .fourm_list a{
+	      	display: inline-block;
+	      	width: 320px; 
+	      	height: 28px;
+	      	border-bottom: 5px solid white;
+	      	
+	      	background-color: #f1f1f1;
+	      	line-height: 28px;
+	      	position: relative;
+	      }
+	      .fourm_list span{
+	      	display:inline-block;
+	      	font-family: 微软雅黑;	      	
+	      	width: 15%;
+	      	padding-left: 10px;
+	      	font-size: 12px;
+	      	color: #d80000;
+            font-weight:bold;
+	      }
+	      .fourm_list var{
+	        display: inline-block;
+	        font-size: 12px;
+	        color: black;
+	        width: 60%;
+	      }
+	      .fourm_list em{
+	      	display: inline-block;
+	      	font-size: 12px;
+	      	color: #666666;
+	      }
+	      .hover_strong1{
+	      	display: block;
+	      	width: 320px;
+	      	height: 70px;
+	      	background-color: #d90000;
+	      	color: white;
+	      	font-size: 12px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            display: none;
+	      }
+	      .fourm_list a:hover{
+	      	height: 70px;
+
+	      }
+	      .fourm_list a:hover .hover_strong1{
+	      	display: block;
+	      	filter:alpha(opacity=100);
+	      }
+	      .hover_strong2{
+	      	display: block;
+	      	padding-top: 10px;
+	      }
+	    
+	      .hover_strong_img{
+	      	float: left;
+	      	margin: 10px 15px 10px 10px;
+	      	display: inline;
+	      }
+	       .hover_strong4{
+	       	float: right;
+	       	font-size: 20px;
+	       	font-family: 微软雅黑;
+	       	padding:4px 5px 0 0;
+	       }
+	    /*  .ad2{
+	      	float: left;
+	      }*/
+	      .list{
+	      	float: left;
+	      	width: 345px;
+	      	height: 300px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin: 10px 10px 10px 0;
+	      	display: inline;
+	      	overflow: hidden;
+	      	zoom:1;
+	      }
+	      .list_head {
+	      	width: 320px;
+	      	height: 30px;
+	      	/*background-color: black;*/
+            margin:0 auto;
+	      }
+	      .list_head a{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            color: #666666;
+            border: 1px solid #dadada;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 6px 6px 0 0;
+            background: url("img/store1.jpg")83px 13px no-repeat;
+	      }
+          .list_head em{
+          	display: inline-block;
+          	width: 6px;
+          	height: 26px;
+          	border-bottom: 1px solid #dadada;
+          }
+          .list_head a:hover {
+             color: black;
+             font-weight: bold;
+             border-bottom: none;
+             background:url("img/store2.jpg")83px 13px no-repeat;
+          }
+          .list_box {
+          	width: 320px;
+          	height: 220px;
+          	/*background-color: #ccc;*/
+          	margin: 0 auto;
+          	font-size: 12px;
+          	margin-top: 5px;
+          	line-height: 29px;
+          }
+          .list_box_dt1{
+          	padding-left: 131px;
+          }
+           .list_box_dt2{
+           	padding-left: 129px;
+           }
+           .list_box dt{
+           	border-bottom: 1px #e5e5e5 dashed;
+           }
+           .list_box dd{
+           	border-bottom: 1px #e5e5e5 dashed;
+            background: url(img/right_four1.jpg)5px 15px no-repeat;
+           }
+           .list_box_em{
+            margin-left: 15px;
+           }
+           .list_box img{
+           	float: right;
+           	padding-top: 10px;
+           }
+           .list_bottom{
+           	height: 30px;
+           	/*background-color: #ccc;*/
+           	margin:5px 0 0 10px;
+           	color: #595959;
+           	font-weight: bold;
+           	background: url("img/right_two2.jpg")277px 3px no-repeat;
+           }
+            .list_bottom input{
+              width: 183px;
+              height: 22px;
+            }
+          .lattice{
+          	float: left;
+          	width: 345px;
+	      	height: 300px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin: 10px 0 10px 0;
+	      	display: inline;
+	      	overflow: hidden;
+	      	zoom:1;
+          }
+          .lattice_box{
+          	width: 320px;
+          	height: 240px;
+          	/*background-color: #ccc;*/
+          	margin: 0 auto;
+            margin-top: 10px;
+          }
+          .lattice_box span{
+          display: inline-block;
+          border: 1px solid white;
+          }
+          .lattice_box_a1{
+          	float: left;
+          	width: 320px;
+          	height: 70px;
+          }
+           .lattice_box_a2{
+          	float: left;
+          	width: 320px;
+          	height: 70px;
+          }
+         
+          .help{
+          	float: left;
+          	width: 345px;
+	      	height: 263px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin:0 10px 10px 0;
+          }
+          .help_title{
+          	width: 300px;
+          	height: 77px;
+          	/*background-color: #Ccc;*/
+          	border-bottom: 1px solid #e5e5e5;
+          	margin: 0 auto;
+          	background: url("img/phone.jpg")0px 59px no-repeat;
+          	padding-top: 20px;
+          	
+          }
+          .help_title span{
+          	display: inline-block;
+          	font-size: 12px;
+          	text-indent: 2em;
+          	color: black;
+          	padding-bottom: 10px;
+          }
+          .help_title a{
+          	display: block;
+          	width: 300px;
+          	height: 23px;
+          	background-color: #ccc;
+            background: url("img/attn.jpg") 160px 2px no-repeat;
+          }
+           .help_title em{
+           	font-family: 微软雅黑;
+           	width: 80px;
+           	font-size: 12px;
+           	color: #b80000;
+           	font-weight: bold;
+           	margin-left: 24px;
+           }
+          .help_title var{
+            font-size: 12px;
+            color: black;
+            margin-left: 75px;
+            }
+            .help_bottom{
+            	width: 300px;
+            	margin: 0 auto;
+            	font-size: 12px;
+            	color: black;
+            	margin-top: 25px;
+            }
+            .help_bottom_l{
+            	width: 150px;
+            	height: 100px;
+            	/*background-color: #ccc;*/
+            	float: left;
+            }
+           
+            .help_bottom dt{
+            	font-weight: bold;
+            	padding-bottom: 5px;
+            }
+          .help_bottom_l dd{
+          	display: block;
+          	width: 100px;
+            /*margin-left: 10px;*/
+            padding-left: 10px;
+            line-height: 20px;
+            background: url("img/right_four1.jpg") 0px 8px no-repeat;
+          }
+           .help_bottom_r dd{
+           	padding-left: 163px;
+           	 line-height: 20px;
+           	background: url("img/right_four1.jpg") 156px 8px no-repeat;
+           }
+          .media{
+          	float: left;
+          	width: 345px;
+	      	height: 263px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+          }
+          .media_content{
+          	width: 310px;
+          	height: 160px;
+          	margin: 0 auto;
+          	text-align: center;
+          	margin-top: 25px;
+          }
+          .media_content img{
+          	float: left;
+          }
+          .media_content dl{
+          	width: 310px;
+          	height: 45px;
+          	/*background-color: #ccc;*/
+          	font-size: 12px;
+          }
+          .media_content dd{
+          	float: left;
+          	margin-left: 10px;
+          }
+           .media_content_d1{
+           	line-height: 16px;
+           }
+           .media_content_d2{
+           	line-height: 28px;
+           }
+            .media_content_d3{
+            	line-height: 28px;
+            }
+             .media_content_d4{
+             	line-height: 28px;
+             }
+	      .right_one{
+	      	width: 240px;
+	      	height: 140px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	background: url("img/load2.jpg") 10px 110px no-repeat ;
+	      }
+	      .r_one_head{
+	      	height: 36px;
+	        line-height: 36px;
+	        padding-left: 12px;
+	        border-bottom: 1px solid #e5e5e5;
+	      	background-color: #f5f5f5;
+	      	margin-bottom: 15px;
+	      }
+	      .r_one_head a{
+	        font-size: 12px;
+	      	font-weight: bold;
+	      	color: black;
+	      }
+	      .r_one_head span {
+	      	color: #cc0d13;
+	      }
+	      .r_one_text{
+	      	height: 19px;
+	      	width: 89px;
+	      }
+          .r_one_a1{
+          	font-size: 12px;
+          	color: #595959;
+          	line-height: 10px;
+          	padding-left: 21px;
+          }
+          .r_one_a2{
+           padding-left: 33px;
+          }
+          .r_one_a2 img{
+          	padding-left: 10px;
+          }
+          .r_one_bottom a{
+          	display: inline-block;
+          	width: 80px;
+          	padding-left:30px;
+          	line-height: 42px;
+          	background: url("img/right_four1.jpg")27px 20px no-repeat;
+          }
+	      .right_two{
+	      	width: 240px;
+	      	height: 90px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	background:url("img/right_two1.jpg") 0 0 no-repeat;
+	      }
+	      .right_two a{
+	      	padding-right: 10px;
+	      	font-size: 14px;
+	      	font-weight: bold;
+	      	float: right;
+	      	line-height: 18px;
+	      	padding-top: 15px;
+	      }
+	       .right_two  span{
+	       	font-size: 12px;
+	       	color: #a3a3a3;
+	        padding-left: 12px;
+	       }
+	     .right_two img{
+	        	_padding-left: 30px;
+	        	padding-top: 10px;
+	        } 
+	      .right_three{
+	      	width: 240px;
+	      	height: 175px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	margin: 0 auto;
+	      }
+	     .right_three img{
+	      	width: 238px;
+	      	height: 173px;
+	      	padding-left: 1px;
+	      	padding-top: 1px;
+	      }
+	      .right_four{
+	      	width: 240px;
+	      	height: 240px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;	
+	      	overflow: hidden;
+	      	zoom:1;
+	      }
+	      .r_f_head_title{
+	      	width: 240px;
+	      	height: 25px;
+	      	/*background-color: #ccc;*/
+	      	text-align: center;
+	      }
+	      .r_f_head_title a{
+	      	display: inline-block;
+	      	width: 68px;
+	      	height: 25px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 5px 5px 0 0;
+	      	font-size: 12px;
+	      	color: #666666;
+	      	text-align: center;
+	      	line-height: 25px;
+	      	background: url(img/store1.jpg )53px 10px no-repeat;
+	      }
+	      .r_f_head_title em{
+	      	display: inline-block;
+	      	width: 5px;
+	      	height: 24px;
+	      	border-bottom:1px solid #e5e5e5;
+	      }
+	       .r_f_head_title a:hover{
+	       	color: black;
+	       	font-weight: bold;
+	       	background: url("img/store2.jpg")53px 10px no-repeat;
+	       	border-bottom: none;
+	       }
+	       .r_four_box a{
+	          display: block;
+	          border-bottom:1px #e5e5e5 dashed; 
+	          line-height: 30px;
+	         }
+	       .r_four_box ul .four_bottom_li{
+	         	border-style: none;
+	         }
+	       .r_four_box ul{
+	       	height: 170px;
+            width: 200px;
+            margin: 0 auto;
+	       }
+	       .r_four_box li{
+	       	font-size: 12px;
+	       	color: black;
+	       	border-bottom:1px #e5e5e5 dashed; 
+	       	line-height: 26px;
+	        background: url("img/right_seven.gif") 3px 12px no-repeat; 
+	        padding-left: 15px;
+	       }
+           .r_four_box var{
+           	display: inline-block;
+           	width:50%;
+           	text-align: center;
+           }
+           .r_four_box  span{
+           	display: inline-block;
+            width:30%;
+            text-align: center;
+           }
+          .r_four_box li span{
+            color: red;
+           }
+           .r_four_box em{
+           	display: inline-block;
+            width:20%;
+            text-align: center;
+           }
+           
+	      .right_five{
+	      	width: 240px;
+	      	height: 420px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      }
+	      .five_box1{
+	      	width: 210px;
+	      	height: 85px;
+	      	/*background-color: #ccc;*/
+	      	border-bottom:1px #cbcbca dashed;
+	      	margin: 0 auto;
+	      	/*background: url("img/store5.jpg")95px 45px no-repeat;*/
+	      	padding-top: 7px;
+            position: relative;
+	      }
+	      .five_img{
+	      	position: absolute;
+	      	top: 50px;
+	      	left: 65px;
+	      }
+	      .five_box1 dt{
+	      	float: left;
+	      	width: 96px;
+	      	height: 71px;
+	      	border:1px solid #ccc;
+	      	text-align: center;
+            padding-top: 3px;
+	      }
+          .five_box1  dd{
+           display: inline-block;
+           font-size: 12px;
+           float: left;
+           padding-top: 3px;
+           padding-left: 10px;
+          }
+          .five_box_dd1{
+          	color: #b80000;
+          	padding-bottom: 5px;
+          }
+          .five_box1 span{
+          	color: #999999;
+          }
+	      .right_six{
+	      	width: 240px;
+	      	height: 180px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      }
+	      .right_six_box dt{
+	      	width: 215px;
+	      	height: 110px;
+	      	/*background-color: red;*/
+	      	margin: 0 auto;
+	      	margin-top: 40px;
+	      }
+	      .right_six_box dd{
+	      	padding-top: 10px;
+	      	padding-left: 10px;
+	      	color: #333333;
+	        font-size: 12px;
+	      }
+	      .right_seven{
+	      	width: 240px;
+	      	height: 350px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      }
+	      .right_seven_text{
+	      	width: 210px;
+	      	height: 220px;
+	      	/*background-color: #ccc;*/
+	      	margin: 0 auto;	
+	      }
+	       .right_seven_text a{
+	       	display: inline-block;
+	       	width: 210px;
+	        border-bottom: 1px #cbcbca dashed;
+	        line-height: 25px;
+            /*text-indent: 2em;*/
+            /*ie6有bug*/
+            background:url("img/right_seven.gif")11px 10px no-repeat;
+            _background:url("img/right_seven.gif")1px 1px no-repeat;
+	       }
+	      .right_seven_text span{
+             font-size: 12px;
+             color:#c75d61;
+	      }
+	      .right_seven_text var{
+	      	color: #c3c3c3;
+	      }
+	      .right_seven_text em{
+	      	font-size: 12px;
+	      	color: black;
+	      }
+	      .right_seven_text .right_seven_bottom{
+	      	border-bottom: none;
+	      }
+	      .seven_var{
+	      	padding-left: 22px;
+	      }
+ 	      .right_eight{	
+	      	width: 240px;
+	      	height: 378px;
+	      	border:1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	overflow: hidden;
+	      	zoom:1;
+	      }
+	      .right_eight_title{
+	      	width: 215px;
+	      	height: 150px;
+	      	/*background-color: #ccc;*/
+	      	margin: 0 auto;
+	      	border-bottom: 1px #cbcbca dashed;
+	      }
+	      .eight_title_l{
+	      	float: left;
+	      	width: 100px;
+	      	height: 150px;
+	      	/*background-color: #ccc;*/
+	      }
+          .eight_title_r{
+          	float: right;
+          	width: 100px;
+          	height: 150px;
+          	/*background-color: red;*/
+          }
+          .right_eight_title dt{ 
+           width: 98px;
+           height: 71px;
+           border: 1px solid #dadada;
+           text-align: center;
+           padding-top: 4px;
+          }
+          .right_eight_title .eight_red_dd{
+          	color: #b80000;
+          	padding-top: 8px;
+          	padding-bottom: 8px;
+          }
+          .right_eight_title span{
+          	color: #999999;
+          }
+          .right_eight_title dl{
+          	font-size: 12px;
+          }
+          .eight_list{
+          	width: 210px;
+          	height: 170px;
+          	/*background-color: #ccc;*/
+          	margin: 0 auto;
+          }
+          .eight_list a{
+          	line-height: 29px;
+          }
+	      .right__{
+	      	margin: 10px 0 10px 5px;
+	      }
+	      .bottom{
+	      	height: 80px;
+	      	border: 1px solid #e5e5e5;
+	      	border-radius: 6px;
+	      	text-align: center;
+	      }
+	      #bottom_div1{
+	      	margin-top: 20px;
+	      		line-height: 22px;
+	      }
+          #bottom_div1 a{
+          font-size:12px; 
+          	color:black;
+
+          }
+          #bottom_div2 a{
+          	color: #767676;
+          	font-size: 12px;
+          }
+ 	</style>
+</head>
+<body>
+   <div class="wrap">
+   	   <div class="head">
+   	   	   <div class="head_nav">
+   	   	   	   <div class="head_nav_l">
+   	   	   	   	   <span>切换城市：</span><a href="###">北京</a><a href="###">上海</a><a href="###">福州</a><a href="###">广州</a><a href="###">青岛</a>
+   	   	   	   </div>
+   	   	   	   <div class="head_nav_r">
+   	   	   	   	   <a href="###"><img src="img/nav1.jpg" alt="" style="padding-right:6px;">加盟100度</a><span>|</span><a href="###"><img src="img/nav2.jpg" alt=""style="padding-right:5px;">店铺管理</a>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="head_label">
+   	   	   	   <div class="head_label_l">
+   	   	   	   	   <a href="###"><span  class="label_1">美食</span></a>
+   	   	   	   	   <a href="###"><span  class="label_2">夜店</span></a>
+   	   	   	   	   <a href="###"><span  class="label_3">购物</span></a>
+   	   	   	   	   <a href="###"><span  class="label_4">文化</span></a>
+   	   	   	   	   <a href="###"><span  class="label_5">休闲</span></a>
+   	   	   	   </div>
+   	   	   	   <div class="head_label_c">
+   	   	   	   	   <a href="###"><img src="img/label6.jpg" alt=""></a>
+   	   	   	   </div>
+   	   	   	   <div class="head_label_r">
+	   	   	   	   	<a href="###"><span  class="label_7">烧客空间</span></a>
+	   	   	   	   	<a href="###"><span  class="label_8">知识分子</span></a>
+	   	   	   	   	<a href="###"><span  class="label_9">白吃白拿</span></a>
+	   	   	   	   	<a href="###"><span  class="label_10">烧客论坛</span></a>
+	   	   	   	   	<a href="###"><span  class="label_11">企业俱乐部</span></a>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="head_search">
+   	   	   	    <div class="head_search_up"><a href="###">搜店</a><a href="###">地址</a><a href="###">优惠劵</a><a href="###">全文</a><a href="###">视频</a>
+   	   	   	    </div>
+   	   	   	    <div class="head_search_c">
+   	   	   	    	<input type="text" placeholder="例如：荷棠鱼坊烤鱼&ensp;或&ensp;樱花日本料理">
+   	   	   	    </div>
+   	   	   	    <div class="head_seach_c_r">
+   	   	   	    		<span>金钱豹、大江南、湘水之珠、德禹楼</span><br><span>荷棠鱼坊烤鱼、SOHO尚都、湘味都...</span>
+   	   	   	    </div>
+   	   	   	    <div class="head_search_down">
+   	   	   	    	<a href="###" class="search_a">宣萱&ensp;<span>5分钟前</span>&ensp;</a><a href="">写了一篇新文章:那些灿烂华美的瞬间...</a>
+   	   	   	    </div>
+   	   	   </div>
+   	   </div>
+   	   <div class="main">
+   	       <div class="main_left">
+   	       	 <div class="video">
+   	       	 	<div class="video_head">
+   	       	 		<span>WHAT'HOT</span>
+   	       	 	</div>
+   	       	 	<div class="video_main">
+   	       	 		<iframe height=285 width=320 src="http://player.youku.com/embed/XMTMzMTc0NjQ3Mg==" frameborder=0 allowfullscreen></iframe>
+   	       	 	</div>
+   	       	 	<div class="video_bottom">
+   	       	 		<dl>
+   	       	 			<dt><img src="img/video2.jpg" alt=""></dt>
+   	       	 			<dd>现场实录：杭州机场国航系统的崩溃</dd>
+   	       	 			<dd>网友自拍国航航班晚点后的遭遇</dd>
+   	       	 			<dd>【拍客】绝对奢侈的航班&nbsp;注意第41秒</dd>
+   	       	 		</dl>
+   	       	 	</div>
+   	       	 </div>
+   	       	 <div class="store">
+   	       	 	 <div class="store_head">
+   	       	 		<div class="store_head_l">
+   	       	 			<a href="##">HOT&ensp;SHOP&nbsp;<var>红店铺</var></a>
+   	       	 		</div>
+   	       	 		<em>&nbsp;</em>
+   	       	 		<div class="store_head_r">
+   	       	 			<a href="##">EW&ensp;SHOP&nbsp;<var>新开张</var></a>
+   	       	 		</div>
+   	       	 	</div>
+   	       	 	<div class="store_box">
+   	       	 		<div class="store_box1">
+   	       	 		  <img src="img/store_.jpg" alt="" class="store_">
+   	       	 			<dl>
+   	       	 				<dt><img src="img/store3.jpg" alt="" ></dt>
+   	       	 				<dd class="s_b_theme">御丹和涵珍园国际酒店</dd>
+   	       	 				<dd>区域:朝阳/CBD</dd>
+   	       	 				<dd>人均:180元</dd>
+   	       	 				<dd>人气:123321</dd>
+   	       	 			</dl>
+   	       	 		</div>
+   	       	 		<div class="store_box2">
+   	       	 		    <img src="img/store_.jpg" alt="" class="store_">
+   	       	 			<dl>
+   	       	 				<dt><img src="img/store3.jpg" alt="" ></dt>
+   	       	 				<dd class="s_b_theme">御丹和涵珍园国际酒店</dd>
+   	       	 				<dd>区域省:朝阳/CBD</dd>
+   	       	 				<dd>人均:180元</dd>
+   	       	 				<dd>人气:123321</dd>
+   	       	 			</dl>
+   	       	 		</div>
+   	       	 		<div class="store_box3">
+   	       	 		    <img src="img/store_.jpg" alt="" class="store_">
+   	       	 			<dl>
+   	       	 				<dt><img src="img/store3.jpg" alt="" ></dt>
+   	       	 				<dd class="s_b_theme">御丹和涵珍园国际酒店</dd>
+   	       	 				<dd>区域省:朝阳/CBD</dd>
+   	       	 				<dd>人均:180元</dd>
+   	       	 				<dd>人气:123321</dd>
+   	       	 			</dl>
+   	       	 		</div>
+   	       	 		<div class="store_img"><img src="img/store5.gif" alt=""></div>
+   	       	 	</div>
+   	       	 	 <div class="store_bottom"><a href="###">more</a></div>
+   	       	 </div>
+   	       	 <div class="ad1"><img src="img/ad.jpg" alt=""></div>
+   	       	 <div class="calendar">
+   	       	 	<div class="calendar_head">
+   	       	 		<div class="calendar_head_r">
+   	       	 			<span>LUCKY&ensp;YODAY</span><br><var>每日活动</var>
+   	       	 		</div>
+   	       	 		<div class="calendar_head_l">2014</div>
+   	       	 	</div>
+   	       	 	<div class="calendar_theme">
+   	       	 		<dl>
+   	       	 			<dt><img src="img/calendar2.jpg" alt=""></dt>
+   	       	 			<dd><a href="##">07</a>&ensp;<a href="##">21</a><span>本日主题XXXXXXXXX</span></dd>
+   	       	 			<dd>迟来的荣耀——维米尔的写实主义风俗</dd>
+   	       	 			<dd>画迟到的荣誉维米尔画迟到的荣誉维</dd>
+   	       	 			<dd>米尔米尔米尔</dd>
+   	       	 		</dl>
+   	       	 	</div>
+   	       	 	<div class="calendar_number">
+   	       	 	     <a href="##">
+   	       	 	     	<span>MON</span>
+   	       	 	     	<span>TUE</span>
+   	       	 	     	<span>WED</span>
+   	       	 	     	<span>THU</span>
+   	       	 	     	<span>FRL</span>
+   	       	 	     	<span>SAT</span>
+   	       	 	     	<span>SUN</span>
+   	       	 	     </a>
+   	       	 		<table>
+   	       	 			<tr>
+   	       	 				<td class="number_tinge">29</td>
+   	       	 				<td class="number_tinge">30</td>
+   	       	 				<td>1</td>
+   	       	 				<td>2</td>
+   	       	 				<td>3</td>
+   	       	 				<td>4</td>
+   	       	 				<td>5</td>
+   	       	 			</tr>
+   	       	 			<tr>
+   	       	 				<td>6</td>
+   	       	 				<td>7</td>
+   	       	 				<td>8</td>
+   	       	 				<td>9</td>
+   	       	 				<td>10</td>
+   	       	 				<td>11</td>
+   	       	 				<td>12</td>
+   	       	 			</tr>
+   	       	 			<tr>
+   	       	 				<td>13</td>
+   	       	 				<td>14</td>
+   	       	 				<td>15</td>
+   	       	 				<td>16</td>
+   	       	 				<td>17</td>
+   	       	 				<td>18</td>
+   	       	 				<td>19</td>
+   	       	 			</tr>
+   	       	 			<tr>
+   	       	 				<td>20</td>
+   	       	 				<td class="number_21">21</td>
+   	       	 				<td>22</td>
+   	       	 				<td>23</td>
+   	       	 				<td class="number_24">24
+   	       	 					
+   	       	 				</td>
+   	       	 				<td>25</td>
+   	       	 				<td>26</td>
+   	       	 			</tr>
+   	       	 			<tr>
+   	       	 				<td>27</td>
+   	       	 				<td>28</td>
+   	       	 				<td>29</td>
+   	       	 				<td>30</td>
+   	       	 				<td>31</td>
+   	       	 				<td>1</td>
+   	       	 				<td>2</td>
+   	       	 			</tr>
+   	       	 			<tr >
+   	       	 				<td class="number_tinge">3</td>
+   	       	 				<td class="number_tinge">4</td>
+   	       	 				<td class="number_tinge">5</td>
+   	       	 				<td class="number_tinge">6</td>
+   	       	 				<td class="number_tinge">7</td>
+   	       	 				<td class="number_tinge">8</td>
+   	       	 				<td class="number_tinge">9</td>
+   	       	 			</tr>
+   	       	 		</table>
+
+   	       	 	</div>
+   	       	 	<!-- <dl class=" number_24_dl">
+   	       	 						<dt><img src="img/24.jpg" alt=""></dt>
+   	       	 						<dd><span>MON</span><var>本日主题XXXXXXXX</var></dd>
+   	       	 						<dd>迟到的荣誉—维米尔的写实主义风俗</dd>
+   	       	 						<dd>画迟到的荣誉维米尔</dd>
+   	       	 					</dl> -->
+   	       	 </div>
+
+   	       	 <div class="recommend">
+   	       	 	<div class="recommend_head">
+   	       	 		<div class="recommend_head_l">
+   	       	 			<span>RECOMMEND</span><br><em>精彩推荐</em>
+   	       	 		</div>
+   	       	 		<div class="recommend_head_r">
+   	       	 			<a href="##">BEST</a>
+   	       	 		</div>
+   	       	 	</div>
+   	       	 	<div class="recommend_picture">
+   	       	 		<div class="r_picture">
+   	       	 			<div class="r_picture_l"></div>
+   	       	 			<div class="r_picture_r">
+   	       	 				<a href="##" class="r_picture_2"><img src="img/recommend2.jpg" alt=""></a>
+   	       	 				<a href="##" class="r_picture_3"><img src="img/recommend3.jpg" alt=""></a>
+   	       	 				<a href="##" class="r_picture_4"><img src="img/recommend4.jpg" alt=""></a>
+   	       	 			</div>
+   	       	 			<div class="r_picture_text">爸爸去哪儿~</div>
+   	       	 		</div>
+   	       	 	</div>
+   	       	 	<div class="recommend_list">
+   	       	 		<a href="##" class="recommend_list1"><span>|</span>&ensp;<em>老店换新颜，丰泽原野田重张亮相...</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list2"><span>|</span>&ensp;<em>生活中哪些商品的包装有缺陷野田</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list1"><span>|</span>&ensp;<em>老店换新颜，丰泽原野田重张亮相...</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list2"><span>|</span>&ensp;<em>生活中哪些商品的包装有缺陷野田</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list1"><span>|</span>&ensp;<em>老店换新颜，丰泽原野田重张亮相...</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list2"><span>|</span>&ensp;<em>生活中哪些商品的包装有缺陷野田</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list1"><span>|</span>&ensp;<em>性感红纯妆&ensp;模特明星野田都爱她</em><var>08/07/22</var></a><br>
+   	       	 		<a href="##" class="recommend_list1"><span>|</span>&ensp;<em>野田凬野田&ensp;日本全能时尚设计美女</em><var>08/07/22</var></a>
+   	       	 	</div>
+   	       	 </div>
+   	       	 <div class="subway">
+   	       	 	<div class="subway_head">
+   	       	 		<a href="##" class="subway_head_l">SUBWAY&ensp;<em>地铁交通图</em></a>
+   	       	 		<var>&ensp;</var>
+   	       	 		<a href="##" class="subway_head_r">MAP&ensp;<em>生活圈</em></a>
+   	       	 	</div>
+   	       	 	<div class="subway_map"><img src="img/subway.jpg" alt=""></div>
+   	       	 	<div class="subway_bottom">
+	   	       	 	<a href="##" class="subway_bottom_one"><span>1</span>号线</a>
+	   	       	 	<a href="##" class="subway_bottom_two"><span>2</span>号线</a>
+	   	       	 	<a href="##" class="subway_bottom_three"><span>13</span>号线</a>
+	   	       	 	<a href="##" class="subway_bottom_four"><span>8</span>通线</a>
+	   	       	 	<a href="##" class="subway_bottom_five"><span>5</span>号线</a>
+   	       	 	</div>
+   	       	 </div>
+   	       	 <div class="forum">
+   	       	 	<div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>BBS</span>&ensp;论坛</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	 </div>
+	   	       	 <div class="fourm_list">
+	   	       	 	<a href="##"><span>01</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">ONE</strong></strong></a><br>
+	   	       	 	<a href="##"><span>02</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">TWO</strong></strong></a><br>
+	   	       	 	<a href="##"><span>03</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">three</strong></strong></a><br>
+	   	       	 	<a href="##"><span>04</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">four</strong></strong></a><br>
+	   	       	 	<a href="##"><span>05</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">five</strong></strong></a><br>
+	   	       	 	<a href="##"><span>06</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">six</strong></strong></a><br>
+	   	       	 	<a href="##"><span>07</span><var>保你没有见过的古怪餐厅</var><em>世说新语</em><strong class="hover_strong1" ><strong class="hover_strong_img"><img src="img/fourm1.jpg" alt=""></strong><strong class="hover_strong2">画皮之——日剧中的手机</strong><strong class="hover_strong3">阿瑞斯</strong><strong class="hover_strong4">seven</strong></strong></a>
+	   	       	 </div>
+   	       	 </div>
+   	       	 <div class="ad2"><img src="img/ad.jpg" alt=""></div>
+   	       	 <div class="list">
+   	       	 	<div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>LlFESTYLE&ensp;ADVICE</span>&ensp;知识分子</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	 </div>
+                 <div class="list_head">
+                 	<em>&nbsp;</em><a href="##">有人再问</a><a href="##">有人知道</a><a href="##">热门问题</a><em>&nbsp;</em>
+                 </div>
+                 <div class="list_box">
+                 	<dl>
+                 		<dt><span class="list_box_dt1">标&nbsp;题</span><span class="list_box_dt2">状态</span></dt>
+                 		<dd><em class="list_box_em">[</em><span>美食</span><em>]</em>&nbsp;<var>推荐几款性价比比较好的冰箱...</var><img src="img/list1.jpg" alt=""></dd>
+                 		<dd><em class="list_box_em">[</em><span>购物</span><em>]</em>&nbsp;<var>生活中哪些商品的包装有缺陷</var><img src="img/list2.jpg" alt=""></dd>
+                 		<dd><em class="list_box_em">[</em><span>休闲</span><em>]</em>&nbsp;<var>为什么我第一次进入保姆和宠物</var><img src="img/list1.jpg" alt=""></dd>
+                 		<dd><em class="list_box_em">[</em><span>美食</span><em>]</em>&nbsp;<var>推荐几款性价比比较好的冰箱</var><img src="img/list2.jpg" alt=""></dd>
+                 		<dd><em class="list_box_em">[</em><span>购物</span><em>]</em>&nbsp;<var>生活中哪些商品的包装有缺陷</var><img src="img/list2.jpg" alt=""></dd>
+                 	</dl>
+                 	<div class="list_bottom">
+                 	   <a href="##"<var>搜搜谁知道：</var><input type="text" placeholder="输入关键字"></a>
+                    </div>
+                 </div>
+   	       	 </div>
+   	       	 <div class="lattice">
+   	       	 	<div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>HOT</span>&ensp;红人烧客</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	 </div>
+	   	       	 <div class="lattice_box">
+	   	       	 	<a href="##" class="lattice_box_a1"><span><img src="img/hot1.jpg" alt=""></span><span><img src="img/hot2.jpg" alt=""><span><strong><img src="img/hot3.jpg" alt=""></strong></a>
+	   	       	 	<a href="##"  class="lattice_box_a2"><span><img src="img/hot4.jpg" alt=""></span><span><img src="img/hot5.jpg" alt=""></span><span><img src="img/hot6.jpg" alt=""></span><span><img src="img/hot7.jpg" alt=""></span></a>
+	   	       	 	<a href="##"  class="lattice_box_a3"><span><img src="img/hot8.jpg" alt=""></span><span><img src="img/hot9.jpg" alt=""></span><span><img src="img/hot10.jpg" alt=""></span><span><img src="img/hot11.jpg" alt=""></span></a>
+	   	       	 </div>
+   	       	 </div>
+   	       	 <div class="help">
+   	       	 	<div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>HELP</span>&ensp;在线帮助</a>
+	   	       	   	  </div>
+	   	       	 </div>
+	   	       	 <div class="help_title">
+	   	       	 	<span>你有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系！</span><br>
+	   	       	 	<a href="##"><em>4006-100-516</em><var>100du.com@line.cn</var></a>
+	   	       	 </div>
+	   	       	 <div class="help_bottom">
+	   	       	 	<div class="help_bottom_l">
+	   	       	 		<dl>
+	   	       	 			<dt>用户帮助</dt>
+	   	       	 			<dd>金币是什么</dd>
+	   	       	 			<dd>怎样查看我的等级</dd>
+	   	       	 			<dd>怎样赚积分</dd>
+	   	       	 		</dl>
+	   	       	 	</div>
+	   	       	 	<div class="help_bottom_r">
+	   	       	 		<dl>
+	   	       	 			<dt>商户帮助</dt>
+	   	       	 			<dd>如何成为明星商户</dd>
+	   	       	 			<dd>邮件推广</dd>
+	   	       	 			<dd>论坛推广方法</dd>
+	   	       	 		</dl>
+	   	       	 	</div>
+	   	       	 </div>
+   	       	 </div>
+   	       	 <div class="media">
+   	       	 	<div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>100DU&ensp;IN&ensp;THE&ensp;MEDIA</span>媒体声音</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	 </div>
+	   	       	 <div class="media_content">
+	   	       	     <dl class="media_content_d1">
+	   	       	     	<dt><img src="img/media1.jpg" alt=""></dt>
+	   	       	     	<dd>日本最大的财经杂志《钻石周刊》对100</dd>
+	   	       	     	<dd>度享乐网的报道</dd>
+	   	       	     </dl>
+	   	       	     <dl class="media_content_d2">
+	   	       	     	<dt><img src="img/media2.jpg" alt=""></dt>
+	   	       	     	<dd>视频网站100度享乐网获网络视听许可证</dd>
+	   	       	     </dl>
+	   	       	     <dl class="media_content_d3">
+	   	       	     	<dt><img src="img/media3.jpg" alt=""></dt>
+	   	       	     	<dd>互联网上的视频橱窗</dd>
+	   	       	     </dl>
+	   	       	     <dl class="media_content_d4">
+	   	       	     	<dt><img src="img/media4.jpg" alt=""></dt>
+	   	       	     	<dd>享乐网主义的机会</dd>
+	   	       	     </dl>
+	   	       	 </div>
+   	       	 </div>
+   	       </div>
+   	       <div class="main_right">
+	   	       <div class="right_one right__">
+	   	       	  <div class="r_one_head">
+	   	       	  	  <a href="##"><span>LOAD</span>&nbsp;登录</a>
+	   	       	  </div>
+	   	       	  <div class="r_one_box">
+	   	       	  	 <a href="##" class="r_one_a1">用户名:<input type="text" class="r_one_text">&nbsp;&nbsp;<input type="checkbox">&ensp;<span>记住我</span></a>
+	   	       	  	 <a href="##" class="r_one_a2">密码:<input type="password" class="r_one_text"><img src="img/load.jpg" alt=""></a>
+	   	       	  </div>
+	   	       	  <div class="r_one_bottom">
+	   	       	  	 <a href="##" >&nbsp;新用户注册</a>
+	   	       	  	 <a href="##" >&nbsp;忘记密码了</a>
+	   	       	  </div>
+	   	       </div>
+	   	       <div class="right_two right__">
+	   	       	  	 <a href="###">转动疯抢盘<br><span>免费得大奖</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/right_two2.jpg" alt=""></a>
+	   	       </div>
+	   	       <div class="right_three right__"><img src="img/right_three.jpg" alt=""></div>
+	   	       <div class="right_four right__">
+	   	             <div class="common_head">
+	   	       	       	  <div class="common_head_left">
+	   	       	       	  	  <a href="##" class="rf"><span>COUPONS</span>&ensp;抢卷儿</a>
+	   	       	       	  </div>
+	   	       	       	  <div class="common_head_right common_more">
+	   	       	        	 <a href="###">more</a>
+	   	       	          </div>
+	   	       	       </div>
+	   	       	   <div class="r_f_head_title">
+	   	       	   	   <em>&nbsp;</em><a href="##">人气</a><a href="##">推荐</a><a href="##">最新</a><em>&nbsp;</em>
+	   	       	   </div>
+	   	       	   <div class="r_four_box">
+	   	       	   	   <ul>
+	   	       	   	   	  <a href="###"><var class="r_four_box_head">商店名</var><span>省</span><em>打印</em></a>
+	   	       	   	   	  <li >老北京一尊皇牛<span>&nbsp;&ensp;12%</span><em>&nbsp;&ensp;235</em></li>
+	   	       	   	   	  <li >老北京一尊皇牛<span>&nbsp;&ensp;12%</span><em>&nbsp;&ensp;235</em></li>
+	   	       	   	   	  <li >老北京一尊皇牛<span>&nbsp;&ensp;12%</span><em>&nbsp;&ensp;235</em></li>
+	   	       	   	   	  <li >老北京一尊皇牛<span>&nbsp;&ensp;12%</span><em>&nbsp;&ensp;235</em></li>
+	   	       	   	   	  <li class="four_bottom_li">老北京一尊皇牛<span>&nbsp;&ensp;12%</span><em>&nbsp;&ensp;235</em></li>
+	   	       	   	   </ul>
+	   	       	   </div>
+	   	       </div>
+	   	       <div class="right_five right__">
+	   	       	   <div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>SHOP</span>&ensp;今日推荐</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	   </div>
+	   	       	   <div class="right_five_box">
+	   	       	   	  <div class="five_box1">
+	   	       	   	  	<dl>
+	   	       	   	  		<dt><img src="img/right_five.jpg" alt=""></dt>
+	   	       	   	  		<dd class="five_box_dd1">汉莱国际美食百汇</dd>
+	   	       	   	  		<dd><span>口味：</span>创意中餐</dd>
+	   	       	   	  		<dd><span>区域：</span>朝阳/CBD</dd>
+	   	       	   	  	</dl>
+	   	       	   	  	<div class="five_img"><img src="img/store5.gif" alt=""></div>
+	   	       	   	  </div>
+	   	       	   	  <div class="five_box1">
+	   	       	   	  	<dl>
+	   	       	   	  		<dt><img src="img/right_five.jpg" alt=""></dt>
+	   	       	   	  		<dd class="five_box_dd1">汉莱国际美食百汇</dd>
+	   	       	   	  		<dd><span>口味：</span>创意中餐</dd>
+	   	       	   	  		<dd><span>区域：</span>朝阳/CBD</dd>
+	   	       	   	  	</dl>
+	   	       	   	  	<div class="five_img"><img src="img/store5.gif" alt=""></div>
+	   	       	   	  </div>
+	   	       	   	  <div class="five_box1">
+	   	       	   	  	<dl>
+	   	       	   	  		<dt><img src="img/right_five.jpg" alt=""></dt>
+	   	       	   	  		<dd class="five_box_dd1">汉莱国际美食百汇</dd>
+	   	       	   	  		<dd><span>口味：</span>创意中餐</dd>
+	   	       	   	  		<dd><span>区域：</span>朝阳/CBD</dd>
+	   	       	   	  	</dl>
+	   	       	   	  	<div class="five_img"><img src="img/store5.gif" alt=""></div>
+	   	       	   	  </div>
+	   	       	   	  <div class="five_box1">
+	   	       	   	  	<dl>
+	   	       	   	  		<dt><img src="img/right_five.jpg" alt=""></dt>
+	   	       	   	  		<dd class="five_box_dd1">汉莱国际美食百汇</dd>
+	   	       	   	  		<dd><span>口味：</span>创意中餐</dd>
+	   	       	   	  		<dd><span>区域：</span>朝阳/CBD</dd>
+	   	       	   	  	</dl>
+	   	       	   	  	<div class="five_img"><img src="img/store5.gif" alt=""></div>
+	   	       	   	  </div>
+	   	       	   </div>
+	   	       </div>
+	   	       <div class="right_six right__">
+	   	       		<div class="common_head">
+		   	       	  	<div class="common_head_left">
+		   	       	  	    <a href="##"><span>360°SHOP</span>&ensp;全景逛店</a>
+		   	       		</div>
+		   	       	    <div class="common_head_right common_more">
+		   	       	  	 	<a href="###">more</a>
+		   	       	  	</div>
+		   	       	  	<div class="right_six_box">
+		   	       	  		<dl>
+		   	       	  			<dt><img src="img/right_six.jpg" alt=""></dt>
+		   	       	  			<dd>苹果雪梨排骨汤</dd>
+		   	       	  		</dl>
+		   	       	  	</div>
+	   	       	  	 </div>
+	   	       </div>
+	   	       <div class="right_seven right__">
+	   	       	  <div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>SHOP</span>&ensp;折扣店</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	   </div>
+	   	       	    <div class=" five_box1">
+	                   <dl>
+			   	         <dt><img src="img/right_five.jpg" alt=""></dt>
+			   	         <dd class="five_box_dd1">汉莱国际美食百汇</dd>
+			   	       	 <dd><span>口味：</span>创意中餐</dd>
+			   	       	 <dd><span>区域：</span>朝阳/CBD</dd>
+	   	               </dl>
+	   	               <div class="five_img"><img src="img/store5.gif" alt=""></div>
+	   	            </div>
+                     <div class="right_seven_text">
+                     	<a href="###" class="right_seven_one"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+                     	<a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+                     	<a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>老北京一尊黄牛</em></a><br>
+                     	<a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>老北京一尊黄牛</em></a><br>
+                     	<a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+                     	<a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>北京一尊黄牛</em></a><br>
+                     	<a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+                     	<a href="###" class="right_seven_bottom"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a>
+                     </div>
+	   	       </div>
+	   	       <div class="right_eight right__">
+	   	       	    <div class="common_head">
+	   	       	   	  <div class="common_head_left">
+	   	       	   	  	  <a href="##" class="rf"><span>COUPONS</span>&ensp;最新加盟</a>
+	   	       	   	  </div>
+	   	       	   	  <div class="common_head_right common_more">
+	   	       	   	  	  <a href="###">more</a>
+	   	       	   	  </div>
+	   	       	   </div>
+	   	       	   <div class="right_eight_title">
+	   	       	   	  <div class="eight_title_l">
+	   	       	   	  	 <dl>
+	   	       	   	  	 	<dt><img src="img/right_five.jpg" alt=""></dt>
+	   	       	   	  	 	<dd class="eight_red_dd">汉莱国际美食百汇</dd>
+	   	       	   	  	 	<dd><span>口味：</span>创意中餐</dd>
+	   	       	   	  	 	<dd><span>区域：</span>朝阳/CBD</dd>
+	   	       	   	  	 </dl>
+	   	       	   	  </div>
+	   	       	   	  <div class="eight_title_r">
+	   	       	   	  	<dl>
+	   	       	   	  		<dt><img src="img/right_eight.jpg" alt=""></dt>
+	   	       	   	  		<dd class="eight_red_dd">汉莱国际美食百汇</dd>
+	   	       	   	  	 	<dd><span>口味：</span>创意中餐</dd>
+	   	       	   	  	 	<dd><span>区域：</span>朝阳/CBD</dd>
+	   	       	   	  	</dl>
+	   	       	   	  </div>
+	   	       	   </div>
+	   	       	   <div class="eight_list right_seven_text">
+	   	       	   	   <a href="###" class="right_seven_one"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+	   	       	   	   <a href="###"><var class="seven_var">[</var><span>休闲</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+	   	       	   	   <a href="###"><var class="seven_var">[</var><span>美食</span><var>]</var>&ensp;<em>老北京一尊黄牛</em></a><br>
+	   	       	   	   <a href="###"><var class="seven_var">[</var><span>购物</span><var>]</var>&ensp;<em>老北京一尊黄牛</em></a><br>
+	   	       	   	   <a href="###"><var class="seven_var">[</var><span>美食</span><var>]</var>&ensp;<em>瀚茶缘（雍和宫店）</em></a><br>
+	   	       	   	   <a href="###" class="right_seven_bottom"><var class="seven_var">[</var><span>美食</span><var>]</var>&ensp;<em>老北京一尊黄牛</em></a>
+	   	       	   </div>
+	   	       </div>
+   	       </div>
+   	  </div>
+   	  <div class="bottom">
+   	     <div id="bottom_div1">
+   	          <a href="##"  style=""><var>关于我们</var>&nbsp;<em>|</em>&nbsp;<var>联系我们</var>&nbsp;<em>|</em>&nbsp;<var>版本声明</var>&nbsp;<em>|</em>&nbsp;<var>加入我们</var>&nbsp;<em>|</em>&nbsp;<var>问题反馈</var>&nbsp;<em>|</em>&nbsp;<var>友情链接</var>&nbsp;<em>|</em>&nbsp;<var>网站地图</var>&nbsp;<em>|</em>&nbsp;<var>视频索引</var></a><br>
+   	      </div>
+   	  	 <div id="bottom_div2">
+   	  		<a href="##" ><span>Copyright°2008&ensp;www.100du.cn&ensp;100度享乐网&ensp;版权所有&nbsp;&nbsp;京ICP证070374号</span></a>
+   	  	 </div>
+   	  </div>
+   </div>
+</body>
+</html>

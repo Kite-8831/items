@@ -1,0 +1,27 @@
+.common_head{
+	overflow: hidden;
+	zoom:1;
+}
+.common_head_left{
+	float: left;
+}
+.common_head_right{
+	float: right;
+}
+.common_head a{
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+    line-height: 40px;
+    padding-right: 	30px;
+}
+.common_head span{
+	 font-size: 12px;
+     font-weight: bold;
+     color: #cc0d13;
+     padding-top: 15px;
+    padding-left: 10px;
+}
+.common_more{
+	background: url("../img/store6.jpg") 34px 14px no-repeat;
+}
